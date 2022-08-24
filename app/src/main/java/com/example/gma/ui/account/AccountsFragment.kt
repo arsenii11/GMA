@@ -1,4 +1,4 @@
-package com.example.gma.ui.notifications
+package com.example.gma.ui.account
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.gma.databinding.FragmentNotificationsBinding
+import com.example.gma.databinding.FragmentAccountBinding
 
-class NotificationsFragment : Fragment() {
+class AccountsFragment : Fragment() {
 
-    private var _binding: FragmentNotificationsBinding? = null
+    private var _binding: FragmentAccountBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -23,9 +23,9 @@ class NotificationsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val notificationsViewModel =
-            ViewModelProvider(this).get(NotificationsViewModel::class.java)
+            ViewModelProvider(this).get(AccountsViewModel::class.java)
 
-        _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
+        _binding = FragmentAccountBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textNotifications

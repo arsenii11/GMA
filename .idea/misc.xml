@@ -3,14 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/accountbachm.xml" value="0.3285" />
         <entry key="app/src/main/res/drawable/back1.xml" value="0.28382568359375004" />
         <entry key="app/src/main/res/drawable/block_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bluebtback.xml" value="0.3285" />
+        <entry key="app/src/main/res/drawable/ddf.xml" value="0.3285" />
         <entry key="app/src/main/res/drawable/ic_account_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_calendar_month_24.xml" value="0.3285" />
+        <entry key="app/src/main/res/drawable/ic_baseline_mail_outline_24.xml" value="0.3285" />
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/mailpic.xml" value="0.3285" />
+        <entry key="app/src/main/res/drawable/phonepic.xml" value="0.3285" />
+        <entry key="app/src/main/res/drawable/phpic.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.6316893737386806" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19610507246376813" />
