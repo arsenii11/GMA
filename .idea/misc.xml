@@ -19,9 +19,9 @@
         <entry key="app/src/main/res/drawable/phpic.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.6316893737386806" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.338946533203125" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.5013342594754869" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11322631835937497" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.1" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3098958333333333" />
