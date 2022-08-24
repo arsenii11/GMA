@@ -91,7 +91,7 @@
             android:layout_height="80dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/bluebtback"
-            android:src="@drawable/mailpic"
+            android:src="@drawable/slackpic"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageButton3" />
 
