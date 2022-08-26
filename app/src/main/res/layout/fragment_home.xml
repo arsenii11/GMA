@@ -7,11 +7,6 @@
     android:orientation="vertical"
     tools:context=".ui.home.HomeFragment">
 
- <RelativeLayout
-     android:layout_width="match_parent"
-     android:layout_height="40dp">
-
- </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +14,16 @@
         android:orientation="vertical"
         tools:ignore="MissingConstraints">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:src="@drawable/glei"
+            tools:ignore="MissingConstraints" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,21 +35,23 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5">
-                <FrameLayout
-                    style="@style/BlockHome"
-                    android:backgroundTint="@color/block"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/book" />
+                    <ImageButton
+                        android:id="@+id/imageButtonBook"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:padding="40dp"
+                        android:scaleType="fitCenter"
+                        android:backgroundTint="@color/block"
+                        android:background="@drawable/block_background"
+                        android:src="@drawable/book"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                </FrameLayout>
 
 
 
@@ -56,21 +62,21 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.5">
-                <FrameLayout
-                    style="@style/BlockHome"
+                <ImageButton
+                    android:id="@+id/imageButtonGroup"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:padding="40dp"
+                    android:scaleType="fitCenter"
                     android:backgroundTint="@color/block"
+                    android:background="@drawable/block_background"
+                    android:src="@drawable/group"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_gravity="center"
-                        android:src="@drawable/group" />
-
-                </FrameLayout>
+                    app:layout_constraintTop_toTopOf="parent" />
             </com.example.gma.helpclasses.SquaredConstraintLayout>
         </LinearLayout>
 
@@ -147,21 +153,24 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5">
-            <FrameLayout
-                style="@style/BlockHome"
+
+
+            <ImageButton
+                android:id="@+id/imageButtonDoc"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="40dp"
+                android:scaleType="fitCenter"
                 android:backgroundTint="@color/block"
+                android:background="@drawable/block_background"
+                android:src="@drawable/page"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/page" />
-
-            </FrameLayout>
 
 
 
@@ -172,20 +181,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="0.5">
-            <FrameLayout
-                style="@style/BlockHome"
+            <ImageButton
+                android:id="@+id/imageButtonOK"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:padding="40dp"
+                android:scaleType="fitCenter"
                 android:backgroundTint="@color/block"
+                android:background="@drawable/block_background"
+                android:src="@drawable/okk"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/okk" />
-
-            </FrameLayout>
+                app:layout_constraintTop_toTopOf="parent" />
         </com.example.gma.helpclasses.SquaredConstraintLayout>
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>

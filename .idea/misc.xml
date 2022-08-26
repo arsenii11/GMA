@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/drawable/accountbachm.xml" value="0.3285" />
+        <entry key="app/src/main/res/drawable/accountbachm.xml" value="0.9965530395507813" />
         <entry key="app/src/main/res/drawable/back1.xml" value="0.28382568359375004" />
         <entry key="app/src/main/res/drawable/block_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/bluebtback.xml" value="0.3285" />
@@ -17,13 +17,15 @@
         <entry key="app/src/main/res/drawable/mailpic.xml" value="0.3285" />
         <entry key="app/src/main/res/drawable/phonepic.xml" value="0.3285" />
         <entry key="app/src/main/res/drawable/phpic.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/drawable/slackpic.xml" value="0.2245" />
+        <entry key="app/src/main/res/layout/activity_documents.xml" value="0.17870884993587002" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.12787286063569683" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.338946533203125" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.33748626708984375" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.5013342594754869" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.11322631835937497" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.5505263157894736" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19610507246376813" />
-        <entry key="app/src/main/res/layout/toolbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.5509536743164063" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3098958333333333" />
       </map>
     </option>

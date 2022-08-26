@@ -10,10 +10,11 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="48dp"
         android:src="@drawable/profile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -21,44 +22,45 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
         android:text="Lead manager"
         android:textColor="@color/white"
         android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="@+id/textSurname"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textSurname"
-        app:layout_constraintTop_toBottomOf="@+id/textSurname" />
+        app:layout_constraintStart_toStartOf="@+id/textSurname" />
 
     <TextView
         android:id="@+id/textSurname"
-        android:textColor="@color/white"
-        android:textSize="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
         android:text="Loremipsum"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="@+id/textName"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/textName"
-        app:layout_constraintTop_toBottomOf="@+id/textName" />
+        app:layout_constraintStart_toStartOf="@+id/textName" />
 
     <TextView
         android:id="@+id/textName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="344dp"
         android:text="Peter"
         android:textColor="@color/white"
         android:textSize="30dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/textSurname"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="421dp"
-        android:layout_height="238dp"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:background="@drawable/accountbachm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,10 +68,10 @@
 
         <ImageButton
             android:id="@+id/imageButton2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:background="@drawable/bluebtback"
             android:src="@drawable/mailpic"
             app:layout_constraintStart_toStartOf="parent"
@@ -77,8 +79,8 @@
 
         <ImageButton
             android:id="@+id/imageButton3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:background="@drawable/bluebtback"
             android:src="@drawable/phpic"
             app:layout_constraintEnd_toEndOf="parent"
@@ -87,8 +89,8 @@
 
         <ImageButton
             android:id="@+id/imageButton4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/bluebtback"
             android:src="@drawable/slackpic"

@@ -18,7 +18,7 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_account"
         android:name="com.example.gma.ui.account.AccountsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_account" />
