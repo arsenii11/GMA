@@ -3,25 +3,19 @@ package com.example.gma
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
-import com.example.gma.databinding.ActivityDocumentsBinding
+import com.example.gma.databinding.ActivityGroupsBinding
 
+class Groups : AppCompatActivity() {
 
-class Documents : AppCompatActivity() {
-
-    private lateinit var binding: ActivityDocumentsBinding
-
+    private lateinit var binding: ActivityGroupsBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDocumentsBinding.inflate(layoutInflater)
+        binding = ActivityGroupsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.backbutton.setOnClickListener{
+        binding.backbuttongr.setOnClickListener{
             val randomIntent = Intent(this, MainActivity::class.java)
             startActivity(randomIntent)
         }
-
-
-
     }
 }

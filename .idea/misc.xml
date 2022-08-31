@@ -7,10 +7,12 @@
         <entry key="app/src/main/res/drawable/arrow.xml" value="0.2245" />
         <entry key="app/src/main/res/drawable/back1.xml" value="0.28382568359375004" />
         <entry key="app/src/main/res/drawable/block_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/block_background_pressed.xml" value="0.311" />
         <entry key="app/src/main/res/drawable/bluebtback.xml" value="0.3285" />
         <entry key="app/src/main/res/drawable/circleblue.xml" value="0.328" />
         <entry key="app/src/main/res/drawable/ddf.svg.xml" value="0.328" />
         <entry key="app/src/main/res/drawable/ddf.xml" value="0.3285" />
+        <entry key="app/src/main/res/drawable/default_button_selector.xml" value="0.311" />
         <entry key="app/src/main/res/drawable/ic_account_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_calendar_month_24.xml" value="0.3285" />
@@ -26,10 +28,12 @@
         <entry key="app/src/main/res/drawable/whiteback.xml" value="0.328" />
         <entry key="app/src/main/res/layout/activity_documents.xml" value="0.37056737588652483" />
         <entry key="app/src/main/res/layout/activity_group.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_groups.xml" value="0.2873980054397099" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12787286063569683" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
+        <entry key="app/src/main/res/layout/activity_study.xml" value="0.27463863337713534" />
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.33748626708984375" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.3975921630859375" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.3344314575195313" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.30691056910569103" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.17870884993587002" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.19610507246376813" />

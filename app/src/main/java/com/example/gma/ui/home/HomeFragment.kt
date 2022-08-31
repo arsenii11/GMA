@@ -10,6 +10,8 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.gma.Documents
+import com.example.gma.Groups
+import com.example.gma.Study
 import com.example.gma.databinding.FragmentHomeBinding
 import org.w3c.dom.Document
 
@@ -31,10 +33,23 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        binding.imageButtonBook.setOnClickListener{
+        binding.imageButtonDoc.setOnClickListener{
             val randomIntent = Intent(activity, Documents::class.java)
             startActivity(randomIntent)
         }
+
+        binding.imageButtonGroup.setOnClickListener{
+            val groupIntent = Intent(activity, Groups::class.java)
+            startActivity(groupIntent)
+        }
+
+        binding.imageButtonBook.setOnClickListener{
+            val studyIntent = Intent(activity, Study::class.java)
+            startActivity(studyIntent)
+        }
+
+
+
         val root: View = binding.root
 
     return root
