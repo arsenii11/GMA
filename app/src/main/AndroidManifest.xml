@@ -19,16 +19,6 @@
             android:name=".Groups"
             android:exported="false" />
         <activity
-            android:name=".Group"
-            android:exported="false"
-            android:label="@string/title_activity_group"
-            android:theme="@style/Theme.GMA.NoActionBar" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.GMA.NoActionBar" />
-        <activity
             android:name=".Documents"
             android:exported="false" />
         <activity

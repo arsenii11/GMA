@@ -7,10 +7,10 @@
     tools:context=".ui.account.AccountsFragment">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="68dp"
+        android:id="@+id/profilePic"
+        android:layout_width="410dp"
+        android:layout_height="828dp"
+        android:layout_marginBottom="100dp"
         android:src="@drawable/profile"
 
         app:layout_constraintBottom_toBottomOf="parent"

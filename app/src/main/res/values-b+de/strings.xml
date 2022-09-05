@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GMA</string>
+    <string name="title_home">Kalender</string>
+    <string name="title_dashboard">Hauptseite</string>
+    <string name="title_notifications">Konto</string>
+    <string name="title_study">Moderne UI</string>
+    <string name="home_t_1">Sie haben</string>
+    <string name="home_t_2">Aufgaben für heute</string>
+    <string name="calender_m">Meetingen</string>
+    <string name="study_KursD">Course details</string>
+    <string name="doc_vacations">Urlaube</string>
+    <string name="doc_sick">Krankenschein</string>
+    <string name="doc_references">Verweise</string>
+</resources>
