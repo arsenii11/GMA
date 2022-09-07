@@ -80,7 +80,7 @@
             app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10"
-            app:srcCompat="@drawable/details" />
+            app:srcCompat="@drawable/details_de" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

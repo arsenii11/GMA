@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">GMA</string>
-    <string name="title_home">Kalender</string>
+    <string name="title_home">Kalendar</string>
     <string name="title_dashboard">Hauptseite</string>
     <string name="title_notifications">Konto</string>
     <string name="title_study">Moderne UI</string>
@@ -14,4 +14,5 @@
     <string name="doc_references">Verweise</string>
     <string name="Apply">Anträge</string>
     <string name="Role">Abteilungsleiter</string>
+    <string name="Group_1">Gruppen</string>
 </resources>
