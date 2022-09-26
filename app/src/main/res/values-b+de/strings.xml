@@ -8,11 +8,11 @@
     <string name="home_t_1">Sie haben</string>
     <string name="home_t_2">Aufgaben für heute</string>
     <string name="calender_m">Meetingen</string>
-    <string name="study_KursD">Course details</string>
     <string name="doc_vacations">Urlaube</string>
     <string name="doc_sick">Krankenschein</string>
     <string name="doc_references">Verweise</string>
     <string name="Apply">Anträge</string>
     <string name="Role">Abteilungsleiter</string>
     <string name="Group_1">Gruppen</string>
+    <string name="crs_details">Kursdetails</string>
 </resources>

@@ -20,6 +20,7 @@
         <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/mailpic.xml" value="0.3285" />
+        <entry key="app/src/main/res/drawable/pen.xml" value="0.1745" />
         <entry key="app/src/main/res/drawable/phonepic.xml" value="0.3285" />
         <entry key="app/src/main/res/drawable/phpic.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/plane.xml" value="0.2245" />
@@ -32,7 +33,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12787286063569683" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/activity_study.xml" value="0.13701149425287357" />
-        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.3355855855855856" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.5033840947546532" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.2682450228035067" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.30691056910569103" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.17870884993587002" />

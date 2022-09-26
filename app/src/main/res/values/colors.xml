@@ -11,7 +11,7 @@
 
     //прозрачный цвет
 
-    <color name="transparent">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
     <color name="block">#E8E8E8</color>
 
 

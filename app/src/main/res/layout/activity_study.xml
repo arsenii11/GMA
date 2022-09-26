@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="20dp"
-            android:text="@string/study_KursD"
+            android:text="@string/crs_details"
             android:textColor="@color/black"
             android:textSize="30dp"
             android:textStyle="bold"

@@ -7,11 +7,11 @@
     <string name="home_t_1">You have</string>
     <string name="home_t_2">tasks for today</string>
     <string name="calender_m">Meetings</string>
-    <string name="study_KursD">Kursdetails</string>
     <string name="doc_vacations">Vacations</string>
     <string name="doc_sick">Sick leaves</string>
     <string name="doc_references">References</string>
     <string name="Apply">Apply for</string>
     <string name="Role">Lead manager</string>
     <string name="Group_1">Groups</string>
+    <string name="crs_details">Course details</string>
 </resources>
