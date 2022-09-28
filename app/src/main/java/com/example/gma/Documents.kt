@@ -21,6 +21,12 @@ class Documents : AppCompatActivity() {
             startActivity(randomIntent)
         }
 
+        binding.sickleavesBlock.setOnClickListener{
+            val randomIntent = Intent(this, SickLeave::class.java)
+            startActivity(randomIntent)
+            finish()
+        }
+
 
 
     }

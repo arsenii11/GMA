@@ -53,6 +53,8 @@
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/vacations_block"
+                android:clickable="true"
                 android:layout_width="320dp"
                 android:layout_height="130dp"
                 android:layout_centerInParent="true"
@@ -102,6 +104,8 @@
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/sickleaves_block"
+                android:clickable="true"
                 android:layout_width="320dp"
                 android:layout_height="130dp"
                 android:layout_centerInParent="true"
@@ -150,6 +154,8 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/references_block"
+            android:clickable="true"
             android:layout_width="320dp"
             android:layout_height="130dp"
             android:layout_centerInParent="true"
@@ -170,8 +176,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:padding="15dp"
-                    android:src="@drawable/page_white"
-                    />
+                    android:src="@drawable/page_white" />
 
             </RelativeLayout>
 

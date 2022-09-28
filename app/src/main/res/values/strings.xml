@@ -14,4 +14,6 @@
     <string name="Role">Lead manager</string>
     <string name="Group_1">Groups</string>
     <string name="crs_details">Course details</string>
+    <string name="sickleave_text2">Later it will be reviewed by the manager If you have a doctor\'s note, please attach it.</string>
+    <string name="sickleave_naming">Apply for the sick leave</string>
 </resources>

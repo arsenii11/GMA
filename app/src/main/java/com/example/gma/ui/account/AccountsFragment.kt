@@ -1,7 +1,6 @@
 package com.example.gma.ui.account
 
 import android.Manifest
-import android.R
 import android.app.Activity.RESULT_OK
 import android.content.Context
 import android.content.Intent
@@ -9,7 +8,9 @@ import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.net.Uri
+import android.os.AsyncTask
 import android.os.Bundle
+import android.os.Environment
 import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
@@ -21,6 +22,11 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.signature.ObjectKey
 import com.example.gma.databinding.FragmentAccountBinding
 import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
+import java.io.OutputStream
+
+private var imageUri: Uri? = null
 
 
 private const val ACTIVITY = "ACCOUNT"
@@ -28,7 +34,7 @@ private const val ACTIVITY = "ACCOUNT"
 private const val GALLERY_REQUEST = 1
 const val APP_PREFERENCES_Path = "Nickname"
 var profile: SharedPreferences? = null
-private const val PICK_IMAGE_REQUEST = 1
+private val PICK_IMAGE_REQUEST = 1
 var FilePath = ""
 
 class AccountsFragment : Fragment() {
@@ -53,8 +59,13 @@ class AccountsFragment : Fragment() {
         _binding = FragmentAccountBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+
+        //Setting a profile picture
+        setProfileImage()
+
+
         //opening gallery to choose an image
-        binding.imageButton3.setOnClickListener { v ->
+        binding.editPhoto.setOnClickListener { v ->
             if (activity?.checkSelfPermission( Manifest.permission.READ_EXTERNAL_STORAGE)  !== PackageManager.PERMISSION_GRANTED &&
                 activity?.checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)  !== PackageManager.PERMISSION_GRANTED
             ) {
@@ -64,9 +75,8 @@ class AccountsFragment : Fragment() {
                 )
                 activity?.let { ActivityCompat.requestPermissions(it, permissions, 1) }
             }
-            val photoPickerIntent = Intent(Intent.ACTION_PICK)
-            photoPickerIntent.type = "image/*"
-            startActivityForResult(photoPickerIntent, GALLERY_REQUEST)
+            val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
+            startActivityForResult(gallery, PICK_IMAGE_REQUEST)
         }
 
 
@@ -75,33 +85,54 @@ class AccountsFragment : Fragment() {
         return root
     }
 
-  /*  @Override
-    public void onActivityResult(var requestCode, val resultCode, val data: Intent) {
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            profileImage =  findViewById(R.id.ProfileImage);
-            profileImage.setImageResource(R.drawable.no_avatar);
-            selectedImageUri = data.getData();
-            Bitmap bitmap;
-            //Сохраняем изображение в файл
+
+            imageUri = data?.data
+            binding.profilePic.setImageURI(imageUri)
+
             try {
-                bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), selectedImageUri);
-                new fileFromBitmap("ProfileFoto", bitmap, getApplicationContext()).execute();
 
 
-            } catch (IOException e) {
-                e.printStackTrace();
+            val bitmap: Bitmap = MediaStore.Images.Media.getBitmap(activity?.getContentResolver(), Uri.parse(
+                imageUri.toString()
+            ))
+
+
+            var file: File? = null
+                file = File(Environment.getExternalStorageDirectory().toString() + File.separator + "ProfilePhoto")
+                file.createNewFile()
+
+                    // Compress the bitmap and save in jpg format
+                    val stream: OutputStream = FileOutputStream(file)
+                    bitmap.compress(Bitmap.CompressFormat.JPEG,100,stream)
+                    stream.flush()
+                    stream.close()
+                FilePath = file.getPath()
+                profile = activity?.getSharedPreferences(APP_PREFERENCES_Path, Context.MODE_PRIVATE)
+                val editor = profile!!.edit()
+                editor.putString("key1", FilePath).apply()
+
+
+
+            }
+
+            catch (e: IOException) {
+                e.printStackTrace()
             }
 
 
 
         }
     }
-*/
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
+
 
    fun setProfileImage() {
         val accountPhoto= activity?.getSharedPreferences(APP_PREFERENCES_Path, Context.MODE_PRIVATE)
@@ -119,6 +150,13 @@ class AccountsFragment : Fragment() {
         }
     }
 
+   fun fileFromBitmap(): AsyncTask<Void, Integer, String> {
+       var context: Context
+       var bitmap: Bitmap
+       var fileNameToSave: String
 
 
+
+       return TODO("Provide the return value")
+   }
 }
