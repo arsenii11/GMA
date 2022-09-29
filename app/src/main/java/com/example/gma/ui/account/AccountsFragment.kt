@@ -26,12 +26,6 @@ import java.io.FileOutputStream
 import java.io.IOException
 import java.io.OutputStream
 
-private var imageUri: Uri? = null
-
-
-private const val ACTIVITY = "ACCOUNT"
-
-private const val GALLERY_REQUEST = 1
 const val APP_PREFERENCES_Path = "Nickname"
 var profile: SharedPreferences? = null
 private val PICK_IMAGE_REQUEST = 1
@@ -73,6 +67,7 @@ class AccountsFragment : Fragment() {
                     Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE
                 )
+
                 activity?.let { ActivityCompat.requestPermissions(it, permissions, 1) }
             }
             val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
@@ -87,10 +82,20 @@ class AccountsFragment : Fragment() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
+        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null /*&& data.getData() != null*/) {
 
             imageUri = data?.data
             binding.profilePic.setImageURI(imageUri)
+
+            val f: File
+
+            f = File(activity?.filesDir, "ProfilePic" + ".jpg")
+            try {
+                f.createNewFile()
+            } catch (e: IOException) {
+                e.printStackTrace()
+            }
+
 
             try {
 
@@ -99,21 +104,15 @@ class AccountsFragment : Fragment() {
                 imageUri.toString()
             ))
 
-
-            var file: File? = null
-                file = File(Environment.getExternalStorageDirectory().toString() + File.separator + "ProfilePhoto")
-                file.createNewFile()
-
                     // Compress the bitmap and save in jpg format
-                    val stream: OutputStream = FileOutputStream(file)
-                    bitmap.compress(Bitmap.CompressFormat.JPEG,100,stream)
+                    val stream: OutputStream = FileOutputStream(f)
+                    bitmap.compress(Bitmap.CompressFormat.JPEG,25,stream)
                     stream.flush()
                     stream.close()
-                FilePath = file.getPath()
+                FilePath = f.getPath()
                 profile = activity?.getSharedPreferences(APP_PREFERENCES_Path, Context.MODE_PRIVATE)
                 val editor = profile!!.edit()
                 editor.putString("key1", FilePath).apply()
-
 
 
             }

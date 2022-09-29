@@ -52,16 +52,20 @@
         app:layout_constraintTop_toBottomOf="@+id/backbuttongr" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="108dp"
-        android:background="@drawable/blue_bt_back"
+        android:background="@drawable/blueback"
         android:text="Send"
+        android:textColor="@color/white"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:rippleColor="@color/blue" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
@@ -91,5 +95,15 @@
         app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate"
+        app:srcCompat="@drawable/mailpic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
