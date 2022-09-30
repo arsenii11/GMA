@@ -1,0 +1,18 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/profile_header">
+
+        <EditTextPreference
+            app:key="Name"
+            app:title="@string/Name_title"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="Surname"
+            app:title="@string/Surname_title"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

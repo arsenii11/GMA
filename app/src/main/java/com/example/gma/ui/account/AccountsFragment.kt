@@ -1,6 +1,7 @@
 package com.example.gma.ui.account
-
 import android.Manifest
+import android.R
+import android.annotation.SuppressLint
 import android.app.Activity.RESULT_OK
 import android.content.Context
 import android.content.Intent
@@ -10,7 +11,6 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.os.AsyncTask
 import android.os.Bundle
-import android.os.Environment
 import android.provider.MediaStore
 import android.view.LayoutInflater
 import android.view.View
@@ -18,13 +18,16 @@ import android.view.ViewGroup
 import androidx.core.app.ActivityCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.preference.PreferenceManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.signature.ObjectKey
+import com.example.gma.SettingsActivity
 import com.example.gma.databinding.FragmentAccountBinding
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
 import java.io.OutputStream
+
 
 const val APP_PREFERENCES_Path = "Nickname"
 var profile: SharedPreferences? = null
@@ -42,6 +45,7 @@ class AccountsFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -54,9 +58,37 @@ class AccountsFragment : Fragment() {
         val root: View = binding.root
 
 
+
         //Setting a profile picture
         setProfileImage()
 
+        //устанавливаем имя
+        val getInfo: SharedPreferences = PreferenceManager.getDefaultSharedPreferences(requireActivity())
+        val Name: String? = getInfo.getString("Name", "")
+         //имя фамилия
+
+        binding.textName.setText(Name)
+        if (Name != null) {
+            if (Name.isEmpty()) {
+                binding.textName.text = "Max"
+            }
+        }
+
+        val Surname: String? = getInfo.getString("Surname", "")
+        //имя фамилия
+
+        binding.textSurname.setText(Surname)
+        if (Surname != null) {
+            if (Surname.isEmpty()) {
+                binding.textSurname.text = "Mustermann"
+            }
+        }
+
+
+        binding.toSettingsButton.setOnClickListener{
+            val randomIntent = Intent(activity, SettingsActivity::class.java)
+            startActivity(randomIntent)
+        }
 
         //opening gallery to choose an image
         binding.editPhoto.setOnClickListener { v ->

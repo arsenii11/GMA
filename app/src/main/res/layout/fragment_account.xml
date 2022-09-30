@@ -130,6 +130,16 @@
             app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/toSettingsButton"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="36dp"
+            android:backgroundTint="@color/transparent"
+            android:src="@drawable/baseline_settings_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

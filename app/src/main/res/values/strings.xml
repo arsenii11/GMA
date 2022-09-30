@@ -16,4 +16,13 @@
     <string name="crs_details">Course details</string>
     <string name="sickleave_text2">Later it will be reviewed by the manager If you have a doctor\'s note, please attach it.</string>
     <string name="sickleave_naming">Apply for the sick leave</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="profile_header">Profile</string>
+    <string name="settings_header">Settings</string>
+
+
+    <string name="Name_title">Name</string>
+    <string name="Surname_title">Surname</string>
 </resources>
