@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background_main"
-    tools:context=".SickLeave">
+    tools:context=".Reference">
 
 
     <include
@@ -23,7 +23,7 @@
         android:layout_width="323dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
-        android:text="@string/sickleave_text2"
+        android:text="Later it will be reviewed by the manager "
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:textSize="25dp"
-        android:text="@string/sickleave_naming"
+        android:text="Apply for the reference"
         android:textColor="@color/black"
         android:textStyle="bold"
 
@@ -76,34 +76,23 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="What happened"
+        android:text="Comments"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+        app:layout_constraintTop_toBottomOf="@+id/whatsneeded" />
 
-    <TextView
-        android:id="@+id/editTextDate"
+    <EditText
+        android:id="@+id/whatsneeded"
         android:layout_width="335dp"
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/whiteback"
         android:clickable="true"
         android:padding="10dp"
-        android:text="Date"
-        android:textColor="@color/black"
-        android:textSize="20dp"
+        android:text="What is needed"
+        android:ems="10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
-        app:layout_constraintEnd_toEndOf="@+id/editTextDate"
-        app:layout_constraintTop_toTopOf="@+id/editTextDate"
-        app:srcCompat="@drawable/mailpic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

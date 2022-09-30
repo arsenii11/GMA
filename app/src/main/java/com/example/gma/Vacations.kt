@@ -4,22 +4,20 @@ import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.DatePicker
-import androidx.appcompat.app.ActionBarDrawerToggle
 import com.example.gma.databinding.ActivitySickLeaveBinding
-import com.example.gma.databinding.ActivityStudyBinding
+import com.example.gma.databinding.ActivityVacationsBinding
 import java.util.Calendar
 
+class Vacations : AppCompatActivity() {
 
-class SickLeave : AppCompatActivity() {
-
-  private lateinit var binding:ActivitySickLeaveBinding
+    private lateinit var binding: ActivityVacationsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySickLeaveBinding.inflate(layoutInflater)
+
+        binding = ActivityVacationsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         //Return button
-      binding.backbuttongr.setOnClickListener{
+        binding.backbuttongr.setOnClickListener{
             val randomIntent = Intent(this, Documents::class.java)
             startActivity(randomIntent)
         }
@@ -32,7 +30,8 @@ class SickLeave : AppCompatActivity() {
 
         //button click to show DataPicker
         binding.editTextDate.setOnClickListener {
-            val dpd = DatePickerDialog(this,DatePickerDialog.OnDateSetListener{view, mYear, mMonth, mDay ->
+            val dpd = DatePickerDialog(this,
+                DatePickerDialog.OnDateSetListener{ view, mYear, mMonth, mDay ->
 
                 binding.editTextDate.text = (""+mDay+"/"+mMonth+"/"+mYear)
             },year, month,data)

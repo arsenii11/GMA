@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/background_main"
-    tools:context=".SickLeave">
-
-
+    tools:context=".Vacations">
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar"
@@ -23,7 +21,7 @@
         android:layout_width="323dp"
         android:layout_height="35dp"
         android:layout_marginTop="8dp"
-        android:text="@string/sickleave_text2"
+        android:text="Later it will be reviewed by the manager"
         android:textSize="15dp"
         app:layout_constraintStart_toStartOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -44,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:textSize="25dp"
-        android:text="@string/sickleave_naming"
+        android:text="Apply for the vacations"
         android:textColor="@color/black"
         android:textStyle="bold"
 

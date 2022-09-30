@@ -22,9 +22,13 @@ class Documents : AppCompatActivity() {
         }
 
         binding.sickleavesBlock.setOnClickListener{
-            val randomIntent = Intent(this, SickLeave::class.java)
-            startActivity(randomIntent)
-            finish()
+            val SickIntent = Intent(this, SickLeave::class.java)
+            startActivity(SickIntent)
+        }
+
+        binding.referencesBlock.setOnClickListener{
+            val ReferenceIntent = Intent(this, Reference::class.java)
+            startActivity(ReferenceIntent)
         }
 
 

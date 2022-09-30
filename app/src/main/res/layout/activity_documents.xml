@@ -155,11 +155,11 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/references_block"
-            android:clickable="true"
             android:layout_width="320dp"
             android:layout_height="130dp"
             android:layout_centerInParent="true"
             android:background="@drawable/whiteback"
+            android:clickable="true"
             android:radius="30dp">
 
             <RelativeLayout
