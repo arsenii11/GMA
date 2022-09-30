@@ -36,7 +36,7 @@ class SickLeave : AppCompatActivity() {
         binding.editTextDate.setOnClickListener {
             val dpd = DatePickerDialog(this,DatePickerDialog.OnDateSetListener{view, mYear, mMonth, mDay ->
 
-                binding.editTextDate.text = ("/"+mDay+"/"+mMonth+"/"+mYear)
+                binding.editTextDate.text = (mDay+"/"+mMonth+"/"+mYear)
             },year, month,data)
             dpd.show()
         }
