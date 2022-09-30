@@ -31,6 +31,11 @@ class Documents : AppCompatActivity() {
             startActivity(ReferenceIntent)
         }
 
+        binding.vacationsBlock.setOnClickListener{
+            val VacationsIntent = Intent(this, Vacations::class.java)
+            startActivity(VacationsIntent)
+        }
+
 
 
     }
