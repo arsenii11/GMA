@@ -82,17 +82,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextDate"
         android:layout_width="335dp"
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/whiteback"
-        android:ems="10"
-        android:inputType="date"
+        android:clickable="true"
         android:padding="10dp"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
