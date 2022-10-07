@@ -84,9 +84,11 @@ class AccountsFragment : Fragment() {
             }
         }
 
-        binding.textSurname.setText(Surname)
-        if (Surname != null) {
-            if (Surname.isEmpty()) {
+        val Job_title: String? = getInfo.getString("Jobtitle", "")
+
+        binding.Role.setText(Job_title)
+        if (Job_title != null) {
+            if (Job_title.isEmpty()) {
                 binding.textSurname.text = ""
             }
         }
