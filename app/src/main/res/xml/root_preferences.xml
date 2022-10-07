@@ -12,6 +12,11 @@
             app:title="@string/Surname_title"
             app:useSimpleSummaryProvider="true"/>
 
+        <EditTextPreference
+            app:key="Jobtitle"
+            app:title="@string/Job_title"
+            app:useSimpleSummaryProvider="true"/>
+
     </PreferenceCategory>
 
 

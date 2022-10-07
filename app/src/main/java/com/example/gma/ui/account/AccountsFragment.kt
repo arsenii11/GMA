@@ -70,7 +70,7 @@ class AccountsFragment : Fragment() {
         binding.textName.setText(Name)
         if (Name != null) {
             if (Name.isEmpty()) {
-                binding.textName.text = "Max"
+                binding.textName.text = ""
             }
         }
 
@@ -80,7 +80,14 @@ class AccountsFragment : Fragment() {
         binding.textSurname.setText(Surname)
         if (Surname != null) {
             if (Surname.isEmpty()) {
-                binding.textSurname.text = "Mustermann"
+                binding.textSurname.text = ""
+            }
+        }
+
+        binding.textSurname.setText(Surname)
+        if (Surname != null) {
+            if (Surname.isEmpty()) {
+                binding.textSurname.text = ""
             }
         }
 
@@ -88,6 +95,7 @@ class AccountsFragment : Fragment() {
         binding.toSettingsButton.setOnClickListener{
             val randomIntent = Intent(activity, SettingsActivity::class.java)
             startActivity(randomIntent)
+            activity?.finish()
         }
 
         //opening gallery to choose an image

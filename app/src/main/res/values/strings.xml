@@ -25,4 +25,5 @@
 
     <string name="Name_title">Name</string>
     <string name="Surname_title">Surname</string>
+    <string name="Job_title">Job position</string>
 </resources>

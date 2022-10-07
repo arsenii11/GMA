@@ -22,6 +22,8 @@ class SickLeave : AppCompatActivity() {
       binding.backbuttongr.setOnClickListener{
             val randomIntent = Intent(this, Documents::class.java)
             startActivity(randomIntent)
+          overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+          finish()
         }
 
         //Data picker

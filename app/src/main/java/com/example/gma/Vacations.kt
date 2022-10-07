@@ -18,8 +18,10 @@ class Vacations : AppCompatActivity() {
         setContentView(binding.root)
         //Return button
         binding.backbuttongr.setOnClickListener{
-            val randomIntent = Intent(this, Documents::class.java)
-            startActivity(randomIntent)
+            val backIntent = Intent(this, Documents::class.java)
+            startActivity(backIntent)
+            overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+            finish()
         }
 
         //Data picker
