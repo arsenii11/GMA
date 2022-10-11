@@ -26,9 +26,10 @@ class Result_ok_l : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        object : CountDownTimer(5000, 1000) {
+        object : CountDownTimer(1100, 1000) {
 
             override fun onTick(millisUntilFinished: Long) {
+                binding.greenCircle.isVisible = true
                 val avd: AnimatedVectorDrawable = binding.done.drawable as AnimatedVectorDrawable
                 avd.start()
             }
