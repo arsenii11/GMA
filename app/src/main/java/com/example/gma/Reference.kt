@@ -21,5 +21,11 @@ class Reference : AppCompatActivity() {
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
             finish()
         }
+        binding.sendBt.setOnClickListener {
+            val resultIntent = Intent(this, Result_ok_l::class.java)
+            startActivity(resultIntent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            finish()
+        }
     }
 }
