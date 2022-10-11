@@ -4,10 +4,7 @@ import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.DatePicker
-import androidx.appcompat.app.ActionBarDrawerToggle
 import com.example.gma.databinding.ActivitySickLeaveBinding
-import com.example.gma.databinding.ActivityStudyBinding
 import java.util.Calendar
 
 
@@ -39,6 +36,13 @@ class SickLeave : AppCompatActivity() {
                 binding.editTextDate.text = (""+mDay+"/"+mMonth+"/"+mYear)
             },year, month,data)
             dpd.show()
+        }
+
+        binding.sendBt.setOnClickListener {
+            val resultIntent = Intent(this, Result_ok_l::class.java)
+            startActivity(resultIntent)
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left)
+            finish()
         }
     }
 }
