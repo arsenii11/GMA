@@ -179,7 +179,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.5">
             <ImageButton
-                android:id="@+id/imageButtonOK"
+                android:id="@+id/imageButtonTasks"
                 android:layout_width="140dp"
                 android:layout_height="140dp"
                 android:layout_weight="1"

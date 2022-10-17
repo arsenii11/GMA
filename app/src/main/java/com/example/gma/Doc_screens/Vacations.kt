@@ -1,10 +1,12 @@
-package com.example.gma
+package com.example.gma.Doc_screens
 
 import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.gma.databinding.ActivitySickLeaveBinding
+import com.example.gma.Documents
+import com.example.gma.R
+import com.example.gma.Result_ok_l
 import com.example.gma.databinding.ActivityVacationsBinding
 import java.util.Calendar
 

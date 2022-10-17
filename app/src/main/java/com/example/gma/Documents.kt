@@ -1,9 +1,11 @@
 package com.example.gma
 
+import com.example.gma.Doc_screens.Reference
+import com.example.gma.Doc_screens.SickLeave
+import com.example.gma.Doc_screens.Vacations
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import com.example.gma.databinding.ActivityDocumentsBinding
 
 

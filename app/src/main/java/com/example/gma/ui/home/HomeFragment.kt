@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.gma.Documents
 import com.example.gma.Groups
 import com.example.gma.Study
+import com.example.gma.Tasks
 import com.example.gma.databinding.FragmentHomeBinding
 import org.w3c.dom.Document
 
@@ -46,6 +47,12 @@ class HomeFragment : Fragment() {
         binding.imageButtonBook.setOnClickListener{
             val studyIntent = Intent(activity, Study::class.java)
             startActivity(studyIntent)
+        }
+
+
+        binding.imageButtonTasks.setOnClickListener{
+            val tasksIntent = Intent(activity, Tasks::class.java)
+            startActivity(tasksIntent)
         }
 
 
