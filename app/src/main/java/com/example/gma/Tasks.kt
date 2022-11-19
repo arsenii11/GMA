@@ -10,7 +10,9 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
+import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -75,11 +77,12 @@ class Tasks : AppCompatActivity() {
             updateRecyclerViewAnimDuration()
 
 
-            lateinit var backbutton:Button
-            backbutton = findViewById(R.id.backbutton)
-            backbutton.setOnClickListener{
-                val randomIntent = Intent(this, MainActivity::class.java)
-                startActivity(randomIntent)
+
+ val backbuttongr: ImageButton= findViewById(R.id.backbuttongr)
+
+            backbuttongr.setOnClickListener{
+                val IntentT = Intent(this@Tasks, MainActivity::class.java)
+                startActivity(IntentT)
             }
 
 

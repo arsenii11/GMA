@@ -23,27 +23,34 @@
         </include>
 
 
-        <ImageButton
-            android:id="@+id/backbuttongr"
-            android:layout_width="77dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="16dp"
-            android:background="@color/transparent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:srcCompat="@drawable/arrow" />
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
-            android:layout_height="779dp"
-            android:paddingTop="100dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/backbuttongr"
-            tools:layout_editor_absoluteX="7dp"
-            tools:listitem="@layout/item_list" />
+            android:layout_height="854dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <ImageButton
+                android:id="@+id/backbuttongr"
+                android:layout_width="77dp"
+                android:layout_height="50dp"
+                android:paddingTop="10dp"
+                android:layout_marginStart="16dp"
+                android:background="@color/transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                app:srcCompat="@drawable/arrow" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="779dp"
+                android:paddingTop="20dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar"
+                tools:listitem="@layout/item_list" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
