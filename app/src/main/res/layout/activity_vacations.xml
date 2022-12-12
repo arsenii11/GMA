@@ -41,12 +41,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:textSize="25dp"
         android:text="Apply for the vacations"
         android:textColor="@color/black"
+        android:textSize="25dp"
         android:textStyle="bold"
 
-        app:layout_constraintStart_toStartOf="@+id/backbuttongr"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
         app:layout_constraintTop_toBottomOf="@+id/backbuttongr" />
 
 
@@ -59,10 +59,12 @@
         android:text="Send"
         android:textColor="@color/white"
         android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0"
         app:rippleColor="@color/blue" />
 
     <EditText
@@ -74,12 +76,12 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:padding="10dp"
-        android:text="What happened"
+        android:hint="What happened"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
 
-    <TextView
+    <EditText
         android:id="@+id/editTextDate"
         android:layout_width="335dp"
         android:layout_height="50dp"
@@ -87,7 +89,7 @@
         android:background="@drawable/whiteback"
         android:clickable="true"
         android:padding="10dp"
-        android:text="Date"
+        android:hint="Date"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
