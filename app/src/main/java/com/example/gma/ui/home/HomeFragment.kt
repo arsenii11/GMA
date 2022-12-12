@@ -55,6 +55,11 @@ class HomeFragment : Fragment() {
             startActivity(tasksIntent)
         }
 
+        binding.numberCourses.setOnClickListener{
+            val tasksIntent = Intent(activity, Tasks::class.java)
+            startActivity(tasksIntent)
+        }
+
 
 
         val root: View = binding.root
