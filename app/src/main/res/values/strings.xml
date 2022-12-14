@@ -23,6 +23,9 @@
     <string name="settings_header">Settings</string>
 
 
+    <string name="file_slct">Select file</string>
+
+
     <string name="Name_title">Name</string>
     <string name="Surname_title">Surname</string>
     <string name="Job_title">Job position</string>
