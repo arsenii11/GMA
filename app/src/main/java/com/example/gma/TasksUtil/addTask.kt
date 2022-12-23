@@ -2,8 +2,8 @@ package com.example.gma.TasksUtil
 
 import java.util.*
 
-class addTask {
+class addTask (private val TaskRepository:TaskRepository){
     fun addTask(id:Int, name:String, priority:String, date: Date){
-        TODO()
+       TaskRepository.addTask(id,name,priority,date)
     }
 }

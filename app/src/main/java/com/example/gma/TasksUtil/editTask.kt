@@ -1,7 +1,7 @@
 package com.example.gma.TasksUtil
 
-class editTask {
+class editTask(private val TaskRepository:TaskRepository) {
     fun editTask(TaskId:Int):TaskItem{
-        TODO()
+        return TaskRepository.editTask(TaskId)
     }
 }
