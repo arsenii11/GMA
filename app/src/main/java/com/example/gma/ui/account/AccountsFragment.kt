@@ -31,7 +31,7 @@ import java.io.OutputStream
 
 const val APP_PREFERENCES_Path = "Nickname"
 var profile: SharedPreferences? = null
-private val PICK_IMAGE_REQUEST = 1
+private const val PICK_IMAGE_REQUEST = 1
 var FilePath = ""
 
 class AccountsFragment : Fragment() {
