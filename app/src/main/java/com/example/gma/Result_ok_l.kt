@@ -2,13 +2,12 @@ package com.example.gma
 
 import android.content.Intent
 import android.graphics.drawable.AnimatedVectorDrawable
-import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.core.view.isVisible
-import androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat
 import com.example.gma.databinding.ActivityFileSavedBinding
+import com.example.gma.presentation.MainActivity
 
 
 class Result_ok_l : AppCompatActivity() {

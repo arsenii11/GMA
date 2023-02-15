@@ -1,4 +1,4 @@
-package com.example.gma.views
+package com.example.gma.presentation.views
 
 import android.content.Context
 import android.util.AttributeSet

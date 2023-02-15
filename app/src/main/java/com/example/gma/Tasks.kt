@@ -7,26 +7,15 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
-import android.view.View
-import android.widget.Button
-import android.widget.CheckBox
 import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
-import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.content.edit
-import androidx.core.view.GravityCompat
-import androidx.core.view.isVisible
-import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.gma.R
+import com.example.gma.presentation.MainActivity
 import com.example.gma.utils.bindView
-import com.google.android.material.appbar.AppBarLayout
 import com.nikhilpanju.fabfilter.main.MainListAdapter
-import com.nikhilpanju.fabfilter.main.ToolbarBehavior
 
 
 var animationPlaybackSpeed: Double = 0.8

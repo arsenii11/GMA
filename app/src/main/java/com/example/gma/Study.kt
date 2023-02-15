@@ -3,8 +3,8 @@ package com.example.gma
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.gma.databinding.ActivityGroupsBinding
 import com.example.gma.databinding.ActivityStudyBinding
+import com.example.gma.presentation.MainActivity
 
 class Study : AppCompatActivity() {
 

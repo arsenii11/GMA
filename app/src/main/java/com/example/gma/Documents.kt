@@ -7,6 +7,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.gma.databinding.ActivityDocumentsBinding
+import com.example.gma.presentation.MainActivity
 
 
 class Documents : AppCompatActivity() {

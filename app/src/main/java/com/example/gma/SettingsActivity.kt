@@ -4,8 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.preference.PreferenceFragmentCompat
-import com.example.gma.databinding.ActivityGroupsBinding
 import com.example.gma.databinding.SettingsActivityBinding
+import com.example.gma.presentation.MainActivity
 
 
 class SettingsActivity : AppCompatActivity() {
